@@ -1,18 +1,16 @@
 const fetchData = async () => {
-    let data = {}
-    const res = await fetch("./data.json")
-    const d = await res.json()
-    return data = d 
-}
+  let data = {};
+  const res = await fetch("./data.json");
+  const d = await res.json();
+  return (data = d);
+};
 
+fetchData().then((data) =>
+  data.forEach((element) => {
+    let category = element.category;
+    let score = element.score;
+    let icon = element.icon;
+  })
+);
 
-
-fetchData().then(data =>  data.forEach(element => {
-  console.log(element.category)  
-  console.log(element.score)  
-  console.log(element.icon)  
-}))
-
-const calculateResults = () => {
-    
-}
+const calculateResults = () => {};

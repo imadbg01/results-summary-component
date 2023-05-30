@@ -111,7 +111,7 @@ body {
     --padding: 2.5rem;
     display: grid;
     max-width: 46rem;
-
+    background-color: var(--clr-neutral-100);
 }
 
 @media (min-width: 40rem) {
